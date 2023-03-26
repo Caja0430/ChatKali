@@ -4,7 +4,10 @@
   <h1 align="center">ChatKali</h1>
   <p align="center">Kali Linux Plugin for ChatGPT</p>
 </p>
-[English]([English](./README.md))|[中文]([中文](./README_CN.md))
+<div style="font-size: 1.5rem;">
+  <a href="./README.md">English</a> |
+  <a href="./README_CN.md">中文</a> 
+</div>
 
 ## Installation
 
@@ -20,7 +23,7 @@
 
 3. Update the 'api_key' property in the 'config.ini' file with your OpenAI key.
 
-   [Get key]([Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys))
+   [Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys)
 
 4. Run the program.
 

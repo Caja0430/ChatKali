@@ -6,7 +6,10 @@
   <p align="center">基于ChatGPT的kali Linux插件</p>
 </p>
 
-[English]([English](./README.md))|[中文]([中文](./README_CN.md))
+<div style="font-size: 1.5rem;">
+  <a href="./README.md">English</a> |
+  <a href="./README_CN.md">中文</a> 
+</div>
 
 ## 安装
 
@@ -20,7 +23,7 @@
 
 3. 修改config.ini文件内的api_key属性为您的key
 
-   [获取key]([Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys))
+   [Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys)
 
 4. 启动程序。
 
