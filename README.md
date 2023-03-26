@@ -11,7 +11,7 @@
 
 ## Installation
 
-1. Clone this repository onto your local machine.
+1. Clone this repository onto your local machine or Kali Linux.
 
    `git clone https://github.com/tzf1003/ChatKali.git`
 

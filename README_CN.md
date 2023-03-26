@@ -13,7 +13,7 @@
 
 ## 安装
 
-1. 克隆本仓库到您的本地计算机上。
+1. 克隆本仓库到您的本地计算机或者Kali linux上。
 
    `git clone https://github.com/tzf1003/ChatKali.git`
 
