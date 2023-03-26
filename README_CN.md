@@ -17,15 +17,19 @@
 
    `git clone https://github.com/tzf1003/ChatKali.git`
 
-2.  安装所需的Python模块。
+2. 切换到ChatKali目录
+
+   `cd ./ChatKali` 
+
+3. 安装所需的Python模块。
 
    `pip install -r requirements.txt`
 
-3. 修改config.ini文件内的api_key属性为您的key
+4. 修改config.ini文件内的api_key属性为您的key
 
-   [Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys)
+   [获取key](https://platform.openai.com/account/api-keys)
 
-4. 启动程序。
+5. 启动程序。
 
    `python main.py`
 

@@ -15,17 +15,19 @@
 
    `git clone https://github.com/tzf1003/ChatKali.git`
 
-2. Install the required Python modules .
+2. Switch to the ChatKali directory
 
-   `cd ./ChatKali`
+   `cd ./ChatKali` 
+
+3. Install the required Python modules .
 
    `pip install -r requirements.txt`
 
-3. Update the 'api_key' property in the 'config.ini' file with your OpenAI key.
+4. Update the 'api_key' property in the 'config.ini' file with your OpenAI key.
 
-   [Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys)
+   [Get key](https://platform.openai.com/account/api-keys)
 
-4. Run the program.
+5. Run the program.
 
    `python main.py` 
 
