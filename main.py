@@ -3,8 +3,11 @@ import tkinter as tk
 import re
 import threading
 import copy
+import configparser
 
-openai.api_key = "你的api_key，sk-xxxxx"
+config = configparser.ConfigParser()
+config.read('config.ini')
+openai.api_key = config.get('openai', 'api_key')
 # print(openai.Model.list())
 
 class ChatApplication(tk.Frame):
@@ -81,13 +84,16 @@ class ChatApplication(tk.Frame):
         )
         print(response)
         # 将聊天记录框设为可编辑状态，插入用户输入和回复
-        md_code = re.findall(r'```(.+?)```', str(response.choices[0].message.content), re.S)
+        md_code = re.findall(r'```\n(.+?)\n```', str(response.choices[0].message.content), re.S)
         print(md_code)
         self.history.append({'role': 'user', 'content': user_message})
         self.history.append({'role': 'assistant', 'content': str(response.choices[0].message.content)})
         self.chat_log.configure(state='normal')
         self.chat_log.insert(tk.END, "You: " + self.history[-2]['content'] + "\n")
-        self.chat_log.insert(tk.END, "Chatbot: " + self.history[-1]['content'] + "\n")
+        # 替换掉 代码块
+        after_replacement = re.sub(r'^```\n(.*?)\n```$', r'\1', self.history[-1]['content'], flags=re.MULTILINE | re.DOTALL)
+        # print(after_replacement)
+        self.chat_log.insert(tk.END, "Chatbot: " + after_replacement + "\n")
         self.chat_log.configure(state='disabled')
         if md_code:
             self.md_code_history.append(md_code[0])
