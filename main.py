@@ -19,7 +19,9 @@ class ChatApplication(tk.Frame):
         self.history = []
         self.md_code_history = []
         #设置系统提示词
-        self.history.append({'role': 'system', 'content': str('我希望你扮演为一个网络安全工程师，将辅助用户使用kali Linux对授权的机器进行合法的渗透测试，请按照渗透测试的先后顺序提出一些问题，一次请只提出一个问题，可以多次提问，你将通过我的反馈收集必要的信息比如：ip、端口、漏洞等信息，辅助我使用kali中的各个工具，如果你要提供命令或指令信息，请用Markdown语法中的代码块包含它，如果你明白我的意思，请开始礼貌后提问')})
+        # self.history.append({'role': 'system', 'content': str('我希望你扮演为一个网络安全工程师，将辅助用户使用kali Linux对授权的机器进行合法的渗透测试，请按照渗透测试的先后顺序提出一些问题，一次请只提出一个问题，可以多次提问，你将通过我的反馈收集必要的信息比如：ip、端口、漏洞等信息，辅助我使用kali中的各个工具，如果你要提供命令或指令信息，请用Markdown语法中的代码块包含它，我希望您可以通过我的输入来调整返回的语言,如果你明白我的意思，请开始礼貌提问')})
+        self.history.append({'role': 'system', 'content': str('I would like you to act as a network security engineer and assist the user with conducting legal penetration testing on authorized machines using Kali Linux. Please provide some questions in order of penetration testing, one at a time. You can ask multiple times and I will provide necessary information such as IP address, port, vulnerabilities, etc. through your feedback to help me use various tools in Kali. If you need to provide command or instruction information, please enclose it in a code block using Markdown syntax. I hope you can adjust the language returned based on my input. If you understand what I mean, please begin to ask politely.')})
+
         #设置窗口名称
         self.master.title("ChatKali")
 
@@ -28,6 +30,7 @@ class ChatApplication(tk.Frame):
         self.chat_log = tk.Text(self)
         self.chat_log.pack(side="top", fill="both", expand=True)
         self.chat_log.insert(tk.END, "System: " + "欢迎使用chatkali，开启对话，请发送<开始>"+ "\n")
+        self.chat_log.insert(tk.END, "System: " + "Welcome to chatkali, to start a conversation, please send <Start>" + "\n")
         self.chat_log.configure(state='disabled')
         
         # 创建用户输入框
