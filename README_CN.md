@@ -6,6 +6,8 @@
   <p align="center">基于ChatGPT的kali Linux插件</p>
 </p>
 
+[English]([English](./README.md))|[中文]([中文](./README_CN.md))
+
 ## 安装
 
 1. 克隆本仓库到您的本地计算机上。

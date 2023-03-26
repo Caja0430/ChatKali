@@ -4,6 +4,7 @@
   <h1 align="center">ChatKali</h1>
   <p align="center">Kali Linux Plugin for ChatGPT</p>
 </p>
+[English]([English](./README.md))|[中文]([中文](./README_CN.md))
 
 ## Installation
 
