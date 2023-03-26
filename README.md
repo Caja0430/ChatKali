@@ -17,9 +17,19 @@
 
    `pip install -r requirements.txt`
 
-3. Run the program.
+3. Update the 'api_key' property in the 'config.ini' file with your OpenAI key.
+
+   [Get key]([Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys))
+
+4. Run the program.
 
    `python main.py` 
+
+## Screenshots
+
+<p align="center">
+  <img width="500" src="./Screenshots.png" alt="Screenshots">
+</p>
 
 ## Usage
 

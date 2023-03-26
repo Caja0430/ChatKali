@@ -16,9 +16,19 @@
 
    `pip install -r requirements.txt`
 
-3. 启动程序。
+3. 修改config.ini文件内的api_key属性为您的key
+
+   [获取key]([Account API Keys - OpenAI API](https://platform.openai.com/account/api-keys))
+
+4. 启动程序。
 
    `python main.py`
+
+## 截图
+
+<p align="center">
+  <img width="500" src="./Screenshots.png" alt="Screenshots">
+</p>
 
 ## 使用方法
 
