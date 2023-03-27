@@ -40,7 +40,7 @@ class ChatApplication(tk.Frame):
 
         
         # 创建发送按钮
-        self.send_button = tk.Button(self, text="发送", command=self.send_message)
+        self.send_button = tk.Button(self, text="send", command=self.send_message)
         self.send_button.pack(side="left")
         
         # 创建命令复制框
@@ -54,7 +54,7 @@ class ChatApplication(tk.Frame):
         self.right_button.pack(side="left")
         
         # 创建复制按钮
-        self.copy_button = tk.Button(self, text="复制", command=self.copy_command)
+        self.copy_button = tk.Button(self, text="copy", command=self.copy_command)
         self.copy_button.pack(side="left")
 
     def send_message(self, event=None):
@@ -72,7 +72,7 @@ class ChatApplication(tk.Frame):
 
     def get_response_thread(self, user_message):
         if user_message == '':
-            tk.messagebox.showwarning('警告', '输入框内容不能为空')
+            tk.messagebox.showwarning('警告,warn', '输入框内容不能为空,The input box content cannot be empty')
             return
         self.sendList = []
         self.sendList=copy.deepcopy(self.history)
