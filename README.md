@@ -1,68 +1,68 @@
 # ChatKali
+
 <p align="center">
   <img width="180" src="./logo.png" alt="Chat-Kali">
   <h1 align="center">ChatKali</h1>
-  <p align="center">Kali Linux Plugin for ChatGPT</p>
+  <p align="center">基于ChatGPT的kali Linux插件</p>
 </p>
+
 <div style="font-size: 1.5rem;">
   <a href="./README.md">English</a> |
   <a href="./README_CN.md">中文</a> 
 </div>
 
-## Installation
+## 安装
 
-1. Clone this repository onto your local machine or Kali Linux.
+1. 克隆本仓库到您的本地计算机或者Kali linux上。
 
    `git clone https://github.com/tzf1003/ChatKali.git`
 
-2. Switch to the ChatKali directory
+2. 切换到ChatKali目录
 
    `cd ./ChatKali` 
 
-3. Install the required Python modules .
+3. 安装所需的Python模块。
 
    `pip install -r requirements.txt`
 
-4. Update the 'api_key' property in the 'config.ini' file with your OpenAI key.
+4. 修改config.ini文件内的api_key属性为您的key
 
-   [Get key](https://platform.openai.com/account/api-keys)
+   [获取key](https://platform.openai.com/account/api-keys)
 
-5. Run the program.
+5. 启动程序。
 
-   `python main.py` 
+   `python main.py`
 
-## Screenshots
+## 截图
+
 
 <p align="center">
   <img width="500" src="./Screenshots.png" alt="Screenshots">
 </p>
 
-## Usage
 
-1. Upon running the program, a conversational interface will be presented to the user.
-2. The user can interact with the program by typing in natural language commands and questions.
-3. The program will respond to the user's inputs by providing guidance on how to perform certain tasks using Kali Linux.
-4. The user can also ask for specific information or guidance on a particular tool or technique used in penetration testing.
-5. The program is designed to assist the user in performing tasks such as network scanning, vulnerability identification, and exploitation.
+## 使用方法
 
-## Disclaimer
+1. 运行程序后，会呈现出一个对话式界面。
+2. 用户可以通过自然语言的命令和问题来与程序交互。
+3. 程序会根据用户的输入提供指导，帮助用户使用Kali Linux完成某些任务。
+4. 用户还可以询问关于特定工具或技术在渗透测试中的使用方法和指导。
+5. 本程序旨在协助用户进行网络扫描、漏洞识别和利用等任务。
 
-This program is intended for authorized use only. The developers of this program are not responsible for any misuse or damage caused by the use of this program.
+## 常见问题解答
+<div style="font-size:20px">
+  <a href="./question/API_IS_WALLED/API_IS_WALLED.md">OpenAI 接口被墙解决方案</a>
+</div>
 
-## Contributing
 
-We welcome contributions from the open-source community. Please submit pull requests or issues for any bugs or feature requests.
+## 免责声明
 
-## Feedback
+本程序仅供授权使用。本程序的开发者不对使用本程序所造成的任何滥用或损害负责。
 
-If you have any questions or feedback about this program, please submit an issue.
+## 贡献
 
-## FAQ
+我们欢迎来自开源社区的贡献。请提交拉取请求或问题以报告任何错误或功能请求。
 
-1. What is the purpose of this program? This program is designed to assist users in performing penetration testing on authorized machines using Kali Linux through a conversational interface.
+## 联系方式
 
-2. How does the program work? The program uses ChatGPT, a large language model, to interpret natural language inputs from the user and provide guidance on how to perform certain tasks using Kali Linux.
-
-3. Is this program legal to use? 
-
-   This program is intended for learning purposes only. The developers of this program are not responsible for any misuse or damage caused by the use of this program.
+如果您有关于本程序的任何问题或意见，请提交issue反馈。

@@ -8,6 +8,10 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
 openai.api_key = config.get('openai', 'api_key')
+# http代理
+proxy = config.get('proxy', 'http_address')
+if proxy :
+    openai.proxy = proxy
 # print(openai.Model.list())
 
 class ChatApplication(tk.Frame):
@@ -67,9 +71,9 @@ class ChatApplication(tk.Frame):
 
         try:
             openai.Model.list()
-            self.status_log.config(text="链接openai接口正常，OpenAI interface connection is normal", bg='#c7ffcd')
+            self.status_log.config(text="连接openai接口正常，OpenAI interface connection is normal", bg='#c7ffcd')
         except:
-            self.status_log.config(text="链接openai接口失败，OpenAI interface connection failed", bg='#ffcccc')
+            self.status_log.config(text="连接openai接口失败，OpenAI interface connection failed", bg='#ffcccc')
 
     def send_message(self, event=None):
         self.send_button.config(state='disabled')
