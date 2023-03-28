@@ -1,6 +1,7 @@
 # 我的OpenAI接口被墙解决方案
 ### 错误提示
 **连接openai接口失败**：
+
 ![img_1.png](0.png)
 ## 解决方案(步骤)：
 1. 首先确定物理机开启Clash正常访问https://platform.openai.com/（clash不会用的请自行google）
