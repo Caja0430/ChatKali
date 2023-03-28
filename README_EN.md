@@ -34,7 +34,7 @@
 ## Screenshots
 
 <p align="center">
-  <img width="500" src="./Screenshots.png" alt="Screenshots">
+  <img width="1000" src="./Screenshots.png" alt="Screenshots">
 </p>
 
 ## Usage
